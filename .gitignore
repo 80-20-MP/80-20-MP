@@ -1,0 +1,8 @@
+# JetBrains
+.idea
+
+# Env files
+*.env
+
+# Data
+/data/*
