@@ -19,6 +19,9 @@ services:
       context: backend
       dockerfile: Dockerfile
 
+    volumes:
+      - ./data/pickles:/server/pickles
+
     labels:
       - "traefik.enable=true"
       - "traefik.http.services.backend.loadbalancer.server.port=80"

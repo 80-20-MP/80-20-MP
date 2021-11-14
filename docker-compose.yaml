@@ -17,6 +17,9 @@ services:
   backend:
     image: ghcr.io/80-20-mp/backend:main
 
+    volumes:
+    - ./data/pickles:/server/pickles
+
     labels:
       - "traefik.enable=true"
       - "traefik.http.services.backend.loadbalancer.server.port=80"
